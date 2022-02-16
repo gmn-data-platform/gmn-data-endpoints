@@ -1,5 +1,5 @@
 # GMN Data Endpoints
-Global Meteor Network API, data catalogue and notebooks
+Global Meteor Network API, data catalogue and notebooks.
 
 ## Requirements
 | Prerequisite                                                      | Description                                             |
