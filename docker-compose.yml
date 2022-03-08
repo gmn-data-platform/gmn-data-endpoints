@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  gmn_data_dashboard:
+    build: ./gmn_data_dashboard
+    volumes:
+      - ./gmn_data_dashboard/app:/app
+    depends_on:
+      - gmn_rest_api
+    ports:
+      - 8050:8050
+    networks:
+      - gmn_data_platform_network
+
+  gmn_rest_api:
+    build : ./gmn_rest_api
+    volumes:
+      - ./gmn_rest_api/app:/app
+    env_file:
+      - gmn_rest_api/.env
+    ports:
+      - 80:80
+    networks:
+      - gmn_data_platform_network
+
+networks:
+  gmn_data_platform_network:
+    name: gmn_data_platform_network

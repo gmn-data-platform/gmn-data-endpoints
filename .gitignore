@@ -1,6 +1,6 @@
 logs/
 
-.env
+gmn_rest_api/.env
 
 # Ignore IDE files
 .idea/*
