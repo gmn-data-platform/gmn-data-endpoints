@@ -1,7 +1,8 @@
 """"""
 from typing import Optional
-
 from fastapi import FastAPI
+
+from gmn_python_api import *
 
 app = FastAPI()
 
