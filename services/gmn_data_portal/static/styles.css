@@ -1,0 +1,16 @@
+html {
+    filter: invert(0.9) hue-rotate(190deg); /* Hack for dark theme */
+}
+
+body {
+    background: #ecf0f3; /* Note this color is inverted */
+}
+
+header, footer, .crumbs a, footer > a {
+    background: #ffffff; /* Note this color is inverted */
+    color: #000000 !important; /* Note this color is inverted */
+}
+
+.trail {
+    stroke: url(#TrailGradient);
+}
