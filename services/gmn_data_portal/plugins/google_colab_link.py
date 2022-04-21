@@ -18,7 +18,7 @@ def extra_body_script(database, table, columns, view_name, datasette) -> str:
     var p = document.createElement("p");
     p.style.float = "right";
     var link = document.createElement("a");
-    link.setAttribute("href", "https://colab.research.google.com/github/gmn-data-platform/gmn-python-api/blob/main/global_meteor_network_data_analysis_template.ipynb");
+    link.setAttribute("href", "https://colab.research.google.com/github/gmn-data-platform/gmn-data-endpoints/blob/cef0b3721737e8d65002d21dc56aa27d74003593/gmn_data_analysis_template.ipynb");
     link.setAttribute("target", "_blank");
     link.innerHTML = "Google Colab data analysis template &raquo;";
     link.style.color = "black";
