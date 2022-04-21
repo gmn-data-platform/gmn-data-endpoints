@@ -1,5 +1,5 @@
 # GMN Data Endpoints
-Global Meteor Network data portal, REST API and live meteor map.
+Global Meteor Network data portal and REST API.
 
 ## Requirements
 | Prerequisite                                                      | Description                                             |
