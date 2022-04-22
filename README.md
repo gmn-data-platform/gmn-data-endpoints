@@ -9,6 +9,8 @@ These services can be started up using the [Makefile](https://github.com/gmn-dat
 
 See the [GMN REST API Docs](https://github.com/gmn-data-platform/gmn-data-endpoints/blob/main/gmn_rest_api_docs.md) for more info about querying data using the GMN REST API.
 
+IPython data analysis notebooks for the `gmn-python-api` are also provided here.
+
 More info: https://github.com/gmn-data-platform/gmn-data-platform
 
 ## Requirements
