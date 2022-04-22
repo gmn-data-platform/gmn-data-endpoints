@@ -36,7 +36,7 @@ To learn more, see the [Contributor Guide](https://github.com/gmn-data-platform/
 
 ## License
 
-Distributed under the terms of the [MIT license](https://opensource.org/licenses/MIT), GMN Data Platform Monitoring is free and open source software.
+Distributed under the terms of the [MIT license](https://opensource.org/licenses/MIT), GMN Data Endpoints is free and open source software.
 
 ## Issues
 
