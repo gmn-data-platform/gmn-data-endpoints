@@ -1,6 +1,8 @@
 # GMN Data Endpoints
 Global Meteor Network data portal, REST API and data analysis notebooks.
 
+![GMN Data Portal Screenshot](gmn_data_portal_screenshot.png)
+
 This project provides user-facing interfaces for accessing data in the [GMN Data Store](https://github.com/gmn-data-platform/gmn-data-store). The GMN REST API can query data stored in the GMN Data Store SQLite database (readonly restricted). And the GMN Data Portal is a web interface to view and query the data. The GMN Data Store database is accessed using the gmn-data-store python package and the gmn_data_store volume is mounted using Docker volumes (more info on the GMN Data Store repo).
 
 The GMN REST API and GMN Data Portal are provided by [Datasette](https://datasette.io/). Datasette plugins have been set up to alter the interface and data access methods. The index page has also been overridden. As well as interface changes, a [meteor map](https://github.com/gmn-data-platform/gmn-data-endpoints/tree/2fd5a17a683840fe1cce60932e3af70d9ba74928/services/gmn_data_portal/datasette-meteor-map) plugin has also been written to visualise meteors on an interactive map using [Leaflet](https://leafletjs.com/). 
