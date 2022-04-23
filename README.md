@@ -5,7 +5,7 @@ This project provides user-facing interfaces for accessing data in the [GMN Data
 
 The GMN REST API and GMN Data Portal are provided by [Datasette](https://datasette.io/). Datasette plugins have been set up to alter the interface and data access methods. The index page has also been overridden. As well as interface changes, a [meteor map](https://github.com/gmn-data-platform/gmn-data-endpoints/tree/2fd5a17a683840fe1cce60932e3af70d9ba74928/services/gmn_data_portal/datasette-meteor-map) plugin has also been written to visualise meteors on an interactive map using [Leaflet](https://leafletjs.com/). 
 
-These services can be started up using the [Makefile](https://github.com/gmn-data-platform/gmn-data-endpoints/blob/2fd5a17a683840fe1cce60932e3af70d9ba74928/Makefile).
+These services can be started up using the [Makefile](https://github.com/gmn-data-platform/gmn-data-endpoints/blob/main/Makefile).
 
 See the [GMN REST API Docs](https://github.com/gmn-data-platform/gmn-data-endpoints/blob/main/gmn_rest_api_docs.md) for more info about querying data using the GMN REST API.
 
@@ -25,7 +25,7 @@ More info: https://github.com/gmn-data-platform/gmn-data-platform
 make run_all_services
 ```
 
-Note that the `gmn_data_store` volume should be created beforehand (see the [init task](https://github.com/gmn-data-platform/gmn-data-store/blob/7a6f0038c6926703ab130b46b72fa9aede07ac0e/Makefile) in the GMN Data Store Makefile).
+Note that the `gmn_data_store` volume should be created beforehand (see the [init task](https://github.com/gmn-data-platform/gmn-data-store/blob/main/Makefile) in the GMN Data Store Makefile).
 
 See the Makefile for more provided tasks.
 
