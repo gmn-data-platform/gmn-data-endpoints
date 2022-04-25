@@ -42,11 +42,8 @@ def has_columns(table, columns, view_name) -> bool:
     if not columns:
         return False
     columns = [column.lower() for column in columns]
-    print(columns)
-    return (table == "meteor" or "meteor_summary") and \
-           "latbeg_n_deg" in columns and \
+    return "latbeg_n_deg" in columns and \
            "lonbeg_e_deg" in columns and \
            "latend_n_deg" in columns and \
            "lonend_e_deg" in columns and \
-           ("unique_trajectory_identifier" in columns or (
-                   "id" in columns and table == "meteor"))
+           ("unique_trajectory_identifier" in columns or "id" in columns)
