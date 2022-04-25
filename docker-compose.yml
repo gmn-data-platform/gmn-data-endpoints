@@ -13,7 +13,7 @@ services:
       bash -c "
       pip install /app/datasette-meteor-map &&
       pip install -r /app/requirements.txt &&
-      datasette -p 8001 -h 0.0.0.0 /mnt/gmn_data_store.db -m /app/metadata.yml --template-dir=/app/templates/ --static assets:/app/static/ --plugins-dir=/app/plugins/"
+      datasette -p 8001 -h 0.0.0.0 /mnt/gmn_data_store.db -m /app/metadata.yml --template-dir=/app/templates/ --static assets:/app/static/ --plugins-dir=/app/plugins/ --setting sql_time_limit_ms 10000"
 
     networks:
       - gmn_data_platform_network
