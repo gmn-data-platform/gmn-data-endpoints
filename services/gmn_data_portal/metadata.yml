@@ -5,18 +5,16 @@ databases:
   gmn_data_store:
     queries:
       meteor_summary_feed:
-        title: Meteor Summary
+        title: Meteor Summary Atom Feed
         sql: |-
           select
-            unique_trajectory_identifier as atom_id,
-            unique_trajectory_identifier as atom_title,
+            id as atom_id,
+            id as atom_title,
             strftime(meteor.updated_at) || '+0000' as atom_updated,
-            json_object('beginning_utc_time', meteor.beginning_utc_time, 'latbeg_n_deg', meteor.latbeg_n_deg, 'lonbeg_e_deg', meteor.lonbeg_e_deg, 'htbeg_km', meteor.htbeg_km, 'rageo_deg', meteor.rageo_deg, 'decgeo_deg', meteor.decgeo_deg, 'vgeo_km_s', meteor.vgeo_km_s) as atom_content,
-            'http://0.0.0.0:8001/gmn_data_store/meteor_summary?_where=unique_trajectory_identifier=%22' || unique_trajectory_identifier || '%22' as atom_link
+            'http://0.0.0.0:8001/gmn_data_store/meteor_summary?_where=unique_trajectory_identifier=%22' || id || '%22' as atom_link
           from
-            meteor_summary
-          left join meteor on meteor_summary.unique_trajectory_identifier = meteor.id
+            meteor
           order by
-              meteor.beginning_julian_date desc
+              beginning_julian_date desc
           limit
-            100
+            64
