@@ -18,7 +18,7 @@ databases:
             id as atom_id,
             id as atom_title,
             strftime(meteor.updated_at) || '+0000' as atom_updated,
-            'http://0.0.0.0:8001/gmn_data_store/meteor_summary?_where=unique_trajectory_identifier=%22' || id || '%22' as atom_link
+            'http://0.0.0.0:8001/gmn_data_store/meteor_summary.json?_where=unique_trajectory_identifier=%22' || id || '%22' as atom_link
           from
             meteor
           order by
