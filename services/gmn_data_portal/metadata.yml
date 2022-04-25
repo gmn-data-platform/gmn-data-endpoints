@@ -3,6 +3,13 @@ extra_css_urls:
 
 databases:
   gmn_data_store:
+    title: Global Meteor Network Data Portal
+    license: CC BY 4.0 license
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    source: Global Meteor Network
+    source_url: https://globalmeteornetwork.org/data/
+    about: gmn-data-platform
+    about_url: https://github.com/gmn-data-platform
     queries:
       meteor_summary_feed:
         title: Meteor Summary Atom Feed
