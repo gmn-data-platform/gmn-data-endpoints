@@ -1,3 +1,4 @@
 datasette-atom==0.8.1
 datasette-dateutil==0.3
 datasette-vega==0.6.2
+datasette-seaborn==0.2a0
