@@ -37,8 +37,6 @@ def has_columns(table, columns, view_name) -> bool:
     :param view_name: The view name.
     :return: True if the page should display the meteor map.
     """
-    if view_name not in ("database", "table"):
-        return False
     if not columns:
         return False
     columns = [column.lower() for column in columns]
