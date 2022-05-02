@@ -4,12 +4,20 @@ extra_css_urls:
 databases:
   gmn_data_store:
     title: Global Meteor Network Data Portal
+    description_html: |-
+      <p>Web interface for exploring meteor data in the GMN Data Store.</p>
+      <small>If you would like a copy of the database for local data analysis, please contact us using this <a href="https://globalmeteornetwork.org/?page_id=43">link</a>.</small>
     license: CC BY 4.0 license
     license_url: https://creativecommons.org/licenses/by/4.0/
     source: Global Meteor Network
     source_url: https://globalmeteornetwork.org/data/
     about: gmn-data-platform
     about_url: https://github.com/gmn-data-platform
+    tables:
+      meteor:
+        sort_desc: updated_at
+      participating_station:
+        sort_desc: updated_at
     queries:
       meteor_summary_feed:
         title: Meteor Summary Atom Feed
